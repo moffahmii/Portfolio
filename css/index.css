@@ -1,0 +1,137 @@
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 4px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.bg-image {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-section {
+    background-image: url(../images/cover-img2.jpg);
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    border: 8px solid #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 40px;
+    color: #000;
+    transition: all ease-in-out .5s;
+}
+
+.icon-circle:hover {
+    border: 8px solid #cde1f8;
+    color: white;
+    background-color: #0078ff;
+}
+
+.facts-section {
+    background-image: url(../images/counters-bg.jpg);
+}
+
+.img-hover {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .img-hover {
+    transform: scale(1.2);
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.2);
+    color: #0d6efd;
+}
+
+.cards {
+    background-image: url(../images/overlay-bg.jpg);
+}
+
+#unline {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.contact-section {
+    background-image: url(../images/overlay-bg.jpg);
+}
+
+#backToTop:hover {
+    background: #0056b3;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+#backToTop {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+}
